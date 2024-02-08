@@ -35,6 +35,8 @@ nav ul{
     padding: 10px 20px;
     background-color: aqua;
     border-radius: 50px;
+    border-width: 0;
+    font-weight: bold;
 }
 
 main{
@@ -50,7 +52,7 @@ main div{
 
 main h1{
     font-size: 60px;
-    font-weight: 400;
+    font-weight: bold;
 }
 
 main p{
@@ -62,6 +64,8 @@ main input{
     padding: 10px 20px;
     background-color: aqua;
     border-radius: 50px;
+    border-width: 0;
+    font-weight: bold;
 }
 
 #about{
@@ -171,46 +175,169 @@ section h3{
     background-color: #4696be;
     padding: 10px 20px;
     margin-bottom: 2rem;
+    border-width: 0;
+    font-weight: bold;
 }
 
 #select p{
     color: #f3f4f6;
 }
-/* 
-.title{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20%;
-    padding: 30px;
-    margin: 30px;
-    font-size: 15px;
-    color: #f3f4f6;
-   
+
+@media screen and (max-width:992px) {
+    nav ul{
+        gap: 30px;
+        font-size: 15px;
+    }
+
+    nav img{
+        width: 45%;
+    }
+
+    nav{
+        justify-content: left;
+        padding: 10px 20px;
+    }
+
+    .nav-btn input{
+        position: relative;
+        left: 60px;
+    }
+
+    main h1{
+        font-weight: bold;
+        font-size: 35px;
+    }
+
+    main p{
+        font-size: 15px;
+    }
+
+    .about-header h2{
+        font-weight: bold;
+        font-size: 35px;
+    }
+
+    .about-header p{
+        font-size: 15px;
+    }
+
+    section h3{
+        font-size: 15px;
+    }
+
+    section p{
+        font-size: 12px;
+    }
+    
 }
 
-.lang{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20%;
-    color: #f3f4f6;
-    font-size: 15px;
-    margin: 30px;
+@media screen and (max-width:768px) {
+    main h1{
+        font-size: 30px;
+    }
+
+    .article-body{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    
 }
 
-#select input{
-    display: flex;
-    align-items: center;
-    padding: 30px;
-    margin: 30px;
-  
+@media screen and (max-width:576px) {
+    main{
+        gap: 100px;
+    }
+
+    main p{
+        font-size: 15px;
+    }
+
+    main div{
+        width: 55%;
+    }
+
+    #about .about-content{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    section h3{
+        font-size: 20px;
+    }
+
+    section p{
+        font-size: 15px;
+    }
+
+    .article-body{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .center-links{
+        gap: 15px;
+        
+    }
+
+    #select img{
+        width: 100%;
+    }
+
+    #select{
+        flex-direction: column-reverse;
+    }
+
+    nav ul{
+        gap: 10px;
+        font-size: 10px;
+        font-weight: bold;
+    }
+
+    nav img{
+        width: 100%;
+        padding-right: 1rem;
+    }
+    
 }
 
-#select p{
-    display: flex;
-    margin: 20px;
-    color: #f3f4f6;
-} */
+@media screen and (max-width:480px) {
+    nav ul{
+        gap: 5px;
+        flex-direction: column-reverse;
+    }
+
+    .nav-btn input{
+        padding: 5px 15px;
+        position: relative;
+        left: 20px;
+    }
+
+    main h1{
+        font-size: 25px;
+    }
+
+
+    main{
+        gap: 20px;
+    }
+
+    main img{
+        width: 60%;
+    }
+
+    main p{
+        font-size: 12px;
+    }
+
+    #about .about-content{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    secton p{
+        font-size: 20px;
+    }
+    
+}
 
 

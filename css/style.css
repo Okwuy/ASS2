@@ -47,7 +47,7 @@ main{
 }
 
 main div{
-    width: 45%;
+    width: 100%;
 }
 
 main h1{
@@ -283,10 +283,6 @@ section h3{
         width: 100%;
     }
 
-    #select{
-        flex-direction: column-reverse;
-    }
-
     nav ul{
         gap: 10px;
         font-size: 10px;
@@ -297,14 +293,15 @@ section h3{
         width: 100%;
         padding-right: 1rem;
     }
+
+    #select{
+        padding: 0;
+    }
     
 }
 
 @media screen and (max-width:480px) {
-    nav ul{
-        gap: 5px;
-        flex-direction: column-reverse;
-    }
+
 
     .nav-btn input{
         padding: 5px 15px;
@@ -316,9 +313,9 @@ section h3{
         font-size: 25px;
     }
 
-
     main{
-        gap: 20px;
+        padding: 20px 30px;
+        gap: 30px;
     }
 
     main img{
@@ -337,7 +334,59 @@ section h3{
     secton p{
         font-size: 20px;
     }
+
+    #select{
+        padding: 2px;
+        gap: 0px;
+    }
+
+    nav{
+        padding: 5px 5px;
+    }
+
+    #select img{
+        width: 20%;
+    }
+
+    #articles{
+        padding: 0;
+    }
+
+    #about{
+        padding: 5px;
+    }
+
+    .online{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .center-links{
+        gap: 2px;
+        font-size: 10px;
+        
+    }
+
+    #select p{
+        font-size: 10px;
+    }
+
+    .logo img{
+        width: 100%;
+    }
+
+    .nav-btn input{
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+
+    nav ul{
+        font-size: 8px;
+        gap: 5;
+    }
+        
+    }
     
-}
+
 
 
